@@ -110,7 +110,7 @@ This project is licensed under the **MIT License**. Feel free to use and modify 
 ---
 ## 🌟 View Output
 
-[click here to][![View Output](https://img.shields.io/badge/VIEW-OUTPUT-green?style=for-the-badge)]( https://glathika.github.io/AI_Based_Job_Match/)
+click ==> [![View Output](https://img.shields.io/badge/VIEW-OUTPUT-green?style=for-the-badge)]( https://glathika.github.io/AI_Based_Job_Match/)
 
 ---
 ## 🚀 Happy Coding! 🎯
