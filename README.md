@@ -11,11 +11,7 @@ Click the button below to see the live output:
     <img src="https://img.shields.io/badge/🚀 LIVE DEMO-FF5733?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo"/>
 </a>
 
-## 🌟 View Output
 
-[click here to][![View Output](https://img.shields.io/badge/VIEW-OUTPUT-green?style=for-the-badge)]( https://glathika.github.io/AI_Based_Job_Match/)
-
----
 
 ## 🔥 Features
 
@@ -112,7 +108,11 @@ Want to improve this project? Follow these steps:
 This project is licensed under the **MIT License**. Feel free to use and modify it.
 
 ---
+## 🌟 View Output
 
+[click here to][![View Output](https://img.shields.io/badge/VIEW-OUTPUT-green?style=for-the-badge)]( https://glathika.github.io/AI_Based_Job_Match/)
+
+---
 ## 🚀 Happy Coding! 🎯
 
 
