@@ -1,8 +1,15 @@
 
 
 # AI Job Recommender 🚀
-[![View Output](https://img.shields.io/badge/VIEW-OUTPUT-blue?style=for-the-badge)]( https://glathika.github.io/AI_Based_Job_Match/)
+
 An **AI-powered job recommender** that helps users find jobs based on their skills and interests using the **Adzuna Job API**. The project features a **3D animated background** using **Three.js** and a **TF-IDF-based ranking system** to provide the most relevant job recommendations.
+## 🌟 View Output  
+
+Click the button below to see the live output:  
+
+<a href="https://glathika.github.io/AI_Based_Job_Match/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀 LIVE DEMO-FF5733?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo"/>
+</a>
 
 ## 🌟 View Output
 
