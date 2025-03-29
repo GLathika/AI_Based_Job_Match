@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Job Recommender 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://www.example.com/ai-job-background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- 3D Animated Background -->
+    <canvas id="bg"></canvas>
+
+     <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">AI Job Finder</div>
+       <!-- <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>-->
+        <div class="nav-right">
+            <button class="btn" onclick="showLogin()">Login</button>
+            <button class="btn" onclick="showSignup()">Sign Up</button>
+        </div>
+    </nav>
+    
+    
+    <!-- Signup/Login Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="auth-title">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="authenticateUser()">Submit</button>
+        </div>
+    </div>
+   
+    
+    <!-- Dashboard (Visible After Login)-->
+    <div id="dashboard" class="hidden">
+        <h2>Welcome, <span id="user-name"></span>!</h2>
+       <!--<button onclick="logout()">Logout</button>
+        
+       <div class="dashboard-content">
+            <div class="user-profile">
+                <h3>User Profile</h3>
+                <p>Name: <span id="profile-name"></span></p>
+                <p>Email: user@example.com</p>
+            </div>
+            <div class="settings">
+                <h3>Settings</h3>
+                <p>Update Preferences</p>
+                <button>Edit</button>
+            </div>
+        </div>-->
+    </div>
+    <!-- Include Bootstrap -->
+<!-- Signup/Login Modal -->
+<h2 id="welcome-message"></h2>
+
+
+
+    <div class="container">
+        <h1 class="title">Find Your Dream Job 🚀</h1>
+        <br>
+
+        <!-- Search Form -->
+        <div class="search-card">
+            <h2>Enter Your Skills & Interests</h2>
+            <input type="text" id="skills" placeholder="e.g. Python, Machine Learning">
+            <input type="text" id="interests" placeholder="e.g. Data Science, Remote Work">
+            <button onclick="getJobs()">Find Jobs</button>
+        </div>
+
+        <!-- Job Results Section -->
+        <div id="job-results" class="job-listings">
+            <h2>Job Listings</h2>
+            <div id="job-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+
+    <!-- Three.js 3D Background -->
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("bg"), alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create nodes (particles)
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 1000;
+        const posArray = new Float32Array(particlesCount * 3);
+        for (let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 10;
+        }
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({ color: 0x00ffff, size: 0.05 });
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            particlesMesh.rotation.y += 0.001;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Resize event
+        window.addEventListener("resize", () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+
+</body>
+</html>*/
