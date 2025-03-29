@@ -6,7 +6,7 @@ An **AI-powered job recommender** that helps users find jobs based on their skil
 
 ## 🌟 View Output
 
-[![View Output](https://img.shields.io/badge/VIEW-OUTPUT-blue?style=for-the-badge)](https://yourusername.github.io/ai-job-recommender/)
+[click here to][![View Output](https://img.shields.io/badge/VIEW-OUTPUT-green?style=for-the-badge)]( https://glathika.github.io/AI_Based_Job_Match/)
 
 ---
 
